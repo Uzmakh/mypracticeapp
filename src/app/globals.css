@@ -2,20 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* One way of customization */
+/* @layer base {
+  h1 {
+    font-family: cursive;
+    text-decoration: underline;
+    @apply hover:bg-slate-600;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h3 {
+    font-family: monospace;
+    color: green;
   }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+@layer utilities {
+  .spacing {
+    padding: 20px;
+    color: blue;
+    line-height: 2;
+  }
+} */
